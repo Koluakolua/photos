@@ -1,0 +1,19 @@
+<div class="container">
+  <button
+    class="left-arrow"
+    (click)="onArrowClick('left')"
+    [disabled]="!canSwipe('left')"
+  >
+    <
+  </button>
+  <div class="photo">
+    {{ photos[currentPhoto].img }}
+  </div>
+  <button
+    class="right-arrow"
+    (click)="onArrowClick('right')"
+    [disabled]="!canSwipe('right')"
+  >
+    >
+  </button>
+</div>

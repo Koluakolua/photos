@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { photos } from "../assets/mock-photos";
+import {Photo} from "./model/photo";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TestLazyWebpack';
+  photos: Photo[] = photos;
 }
